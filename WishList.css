@@ -47,19 +47,7 @@ nav{
 .w-title, .w-description, .w-author{
     margin: 1rem;
 }
-#removeWishList{
-    border: none;
-    font-size: 1rem;
-    color: #FFFFFF;
-    background-color: #d2b48c;
-    margin: 0.5rem;
-    cursor: pointer;
-}
 
-#removeWishList:active{
-    background-color: #000080;
-    color: #d2b48c;
-}
 
 .w-img{
     height: 100%;

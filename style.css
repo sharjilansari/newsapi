@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button a{
+    text-decoration: none;
+    color: #000080;
+    background-color: #d2b48c;
+    border: none;
+}
+button a:visited{
+    border: none;
+    text-decoration: none;
+    color: #000080;
+    background-color: #d2b48c;
+}
+
+.grid{
+    margin: 0 auto;
+    border: 2px solid white;
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items:center ;
+}
+#home{
+    background-color: #000080;
+}
+nav{
+    margin: 0 auto;
+    max-width:80% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo a{
+    height: 100%;
+    font-size: 1.875rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.logo a:active{
+    color:#d2b48c ;
+}
+
+.container{
+    min-height: 100%;
+    border: 2px solid gray;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #FFFFFF;
+    height: 100%;
+}
+.title, .description, .author{
+    margin: 1rem;
+}
+#addWishList{
+    border: none;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #d2b48c;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+#addWishList:active{
+    background-color: #000080;
+    color: #d2b48c;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+}
+
+.remove{
+    display:none;
+    border: none;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #d2b48c;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.remove:active{
+    background-color: #000080;
+    color: #d2b48c;
+}

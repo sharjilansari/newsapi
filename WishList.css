@@ -14,24 +14,6 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     place-items:center ;
 }
-nav{
-    margin: 0 auto;
-    max-width:80% ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.logo a{
-    height: 100%;
-    font-size: 1.875rem;
-    cursor: pointer;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-.logo a:active{
-    color:#d2b48c ;
-}
 .w-container{
     min-height: 100%;
     border: 2px solid gray;

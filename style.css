@@ -94,3 +94,50 @@ nav{
     background-color: #000080;
     color: #d2b48c;
 }
+
+.wlogo{
+    text-align: center;
+}
+.wlogo a{
+    height: 100%;
+    font-size: 1.875rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.wlogo a:active{
+    color:#d2b48c ;
+}
+
+#WishList{
+    background-color: #000080;
+}
+.w-grid{
+    margin: 0 auto;
+    border: 2px solid white;
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items:center ;
+}
+.w-container{
+    min-height: 100%;
+    border: 2px solid gray;
+}
+
+.w-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #FFFFFF;
+    height: 100%;
+}
+.w-title, .w-description, .w-author{
+    margin: 1rem;
+}
+
+
+.w-img{
+    height: 100%;
+    width: 100%;
+}

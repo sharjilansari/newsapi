@@ -3,9 +3,27 @@ let y = 0;
 const fun = async () => {
   let data = await axios.get(
     "https://newsapi.org/v2/everything?q=tesla&from=2023-04-27&sortBy=publishedAt&apiKey=b4fd428aaf644f3697b045871fa03354"
-  );
+  ).catch((error) => {
+    console.log(error);
+    console.log("It seems like API is not working. Come back later.")
+  });
   let arr = [];
   let warr = [];
+  if(!data){
+    const container = document.createElement("div");
+    container.className = "container";
+    const box = document.createElement("div");
+    box.className = "box";
+    const title = document.createElement("div");
+    title.className = "title";
+    container.appendChild(box);
+    box.appendChild(title);
+    title.innerHTML = "It seems like API is not working. Come back later.";
+    grid.appendChild(container);
+    grid.className = "grid-full";
+    container.className = "container-full"
+    box.className = "box-full";
+  }
 
   for (let i = 0; i < data.data.articles.length; i++) {
     const container = document.createElement("div");

@@ -141,3 +141,30 @@ nav{
     height: 100%;
     width: 100%;
 }
+
+/* addtional css */
+
+.grid-full{
+    margin: 0 auto;
+    border: 2px solid white;
+    max-width: 80%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items:center ;
+}
+
+.container-full{
+    width: 100%;
+    min-height: 100%;
+    border: 2px solid gray;
+}
+
+.box-full{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #FFFFFF;
+    height: 100vh;
+    align-items: center;
+}
